@@ -16,6 +16,10 @@
     flex-wrap: wrap;
     width: 100%;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &_border {
       &_bottom {
         border-bottom: 3px solid var(--color_border);

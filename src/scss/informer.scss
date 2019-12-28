@@ -14,20 +14,19 @@
   &__content,
   &__action {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 
     &_distribute {
       &_default {
-        align-content: initial;
+        justify-content: initial;
       }
 
       &_between {
-        align-content: space-between;
+        justify-content: center ;
       }
 
       &_center {
-        align-content: center;
+        justify-content: center;
       }
     }
 
