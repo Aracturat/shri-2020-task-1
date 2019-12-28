@@ -1,7 +1,11 @@
 .footer {
+  margin: var(--space_xxxl) var(--gap);
 
   &__content {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
   }
 }
