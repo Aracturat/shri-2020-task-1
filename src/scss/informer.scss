@@ -1,0 +1,41 @@
+.informer {
+  &_border {
+    &_all {
+      border: 3px solid var(--color_border);
+    }
+  }
+
+  &_view {
+    &_default {
+      background: var(--color_default);
+    }
+  }
+
+  &__content,
+  &__action {
+    display: flex;
+    margin-top: auto;
+
+    &_distribute {
+      &_default {
+        justify-content: initial;
+      }
+
+      &_between {
+        justify-content: space-between;
+      }
+
+      &_center {
+        justify-content: center;
+      }
+    }
+
+    &_space-a {
+      @each $space in xl, xxl {
+        &_#{$space} {
+          padding: var(--space_#{$space});
+        }
+      }
+    }
+  }
+}
