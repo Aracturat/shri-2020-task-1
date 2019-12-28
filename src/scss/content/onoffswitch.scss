@@ -1,4 +1,20 @@
 .onoffswitch {
   width: 97px;
   height: 32px;
+  border: 2px solid var(--color_border);
+  padding: 2px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  &_checked {
+    flex-direction: row-reverse;
+  }
+
+  &__button {
+    width: 24px;
+    height: 24px;
+    background: var(--color_border);
+  }
 }
