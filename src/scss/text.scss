@@ -1,0 +1,87 @@
+.text {
+  display: inline-block;
+
+  &_align {
+    &_center {
+      text-align: center;
+    }
+  }
+
+  @each $size in s, m, l, xl, xxl {
+    &_size {
+      &_#{$size} {
+      }
+    }
+  }
+
+  &_type {
+    &_h1 {
+      margin: 18px 0 24px;
+    }
+
+    &_h2 {
+      margin: 45px 0 21px;
+    }
+
+    &_h3 {
+      margin: 42px 0 0;
+    }
+
+    &_p {
+      margin: 15px 0 21px;
+    }
+  }
+
+  &_view {
+    &_primary {
+      --word-background: var(--font-color_primary);
+    }
+
+    &_secondary {
+      --word-background: var(--font-color_secondary);
+    }
+
+    &_ghost {
+      --word-background: var(--font-color_additional);
+    }
+
+    &_link {
+      --word-background: var(--font-color_link);
+    }
+  }
+
+  &__word {
+    display: inline-block;
+    background: var(--word-background);
+  }
+
+  $text-word-heights: (s: 8px, m: 10px, l: 11px, xl: 13px, xxl: 16px);
+
+  @each $text-size, $height in $text-word-heights {
+    &_size_#{$text-size} {
+      .text__word {
+        height: $height;
+      }
+    }
+  }
+
+  $text-word-widths: (
+          s: (s: 20px, m: 48px, l: 100px),
+          m: (s: 24px, m: 56px, l: 114px),
+          l: (s: 28px, m: 68px, l: 138px),
+          xl: (s: 32px, m: 74px, l: 154px),
+          xxl: (s: 36px, m: 88px, l: 184px)
+  );
+
+  @each $text-size, $word-widths in $text-word-widths {
+    @each $word-size, $width in $word-widths {
+      &_size_#{$text-size} {
+        .text__word_width_#{$word-size} {
+          width: $width;
+          margin-bottom: calc(var(--line-height_#{$word-size}) / 2);
+          margin-top: calc(var(--line-height_#{$word-size}) / 2);
+        }
+      }
+    }
+  }
+}
