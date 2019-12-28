@@ -9,6 +9,8 @@
       --font-color_secondary: rgba(0, 0, 0, 0.6);
       --font-color_additional: rgba(0, 0, 0, 0.3);
       --font-color_link: #0077ff;
+
+      --image-placeholder-url: url('/static/images/image-placeholder-primary.svg');
     }
 
     &_project-brand {
@@ -20,6 +22,8 @@
       --font-color_secondary: rgba(255, 255, 255, 0.6);
       --font-color_additional: rgba(255, 255, 255, 0.3);
       --font-color_link: #FFFFFF;
+
+      --image-placeholder-url: url('/static/images/image-placeholder-inverse.svg');
     }
 
     &_project-inverse {
@@ -31,6 +35,8 @@
       --font-color_secondary: rgba(255, 255, 255, 0.6);
       --font-color_additional: rgba(255, 255, 255, 0.3);
       --font-color_link: #0077ff;
+
+      --image-placeholder-url: url('/static/images/image-placeholder-primary.svg');
     }
 
     &_project-warning {
@@ -42,6 +48,8 @@
       --font-color_secondary: rgba(255, 255, 255, 0.6);
       --font-color_additional: rgba(255, 255, 255, 0.3);
       --font-color_link: #FFF;
+
+      --image-placeholder-url: url('/static/images/image-placeholder-primary.svg');
     }
   }
 
