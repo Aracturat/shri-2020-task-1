@@ -1,6 +1,4 @@
 .brand-logo {
-  display: inline-block;
-
   $brand-logo-background-colors: (
       blue: #5dcdf9,
       green: #23b324,
@@ -9,7 +7,7 @@
   );
 
   @each $name, $color in $brand-logo-background-colors {
-    &_name_#{name} {
+    &_name_#{$name} {
       background: #{$color};
     }
   }
