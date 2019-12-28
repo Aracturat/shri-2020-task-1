@@ -1,0 +1,16 @@
+.section {
+  @each $space in xxl, xxxxl {
+    &_indent-b {
+      &_#{$space} {
+        margin-bottom: var(--space_#{$space});
+      }
+    }
+
+    &_space-v {
+      &_#{$space} {
+        padding-left: var(--space_#{$space});
+        padding-right: var(--space_#{$space});
+      }
+    }
+  }
+}
