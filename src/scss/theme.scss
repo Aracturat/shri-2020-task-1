@@ -1,0 +1,90 @@
+.theme {
+  &_color {
+    &_project-default {
+      --color_default: #FFFFFF;
+      --color_accent: #ffcc00;
+      --color_border: #000000;
+
+      --font-color_primary: #000000;
+      --font-color_secondary: rgba(0, 0, 0, 0.6);
+      --font-color_additional: rgba(0, 0, 0, 0.3);
+      --font-color_link: #0077ff;
+    }
+
+    &_project-brand {
+      --color_default: #0077ff;
+      --color_accent: #FFFFFF;
+      --color_border: #FFFFFF;
+
+      --font-color_primary: #FFFFFF;
+      --font-color_secondary: rgba(255, 255, 255, 0.6);
+      --font-color_additional: rgba(255, 255, 255, 0.3);
+      --font-color_link: #FFFFFF;
+    }
+
+    &_project-inverse {
+      --color_default: #000000;
+      --color_accent: #FFFFFF;
+      --color_border: #FFFFFF;
+
+      --font-color_primary: #FFFFFF;
+      --font-color_secondary: rgba(255, 255, 255, 0.6);
+      --font-color_additional: rgba(255, 255, 255, 0.3);
+      --font-color_link: #0077ff;
+    }
+
+    &_project-warning {
+      --color_default: #ff3333;
+      --color_accent: #FFFFFF;
+      --color_border: #ff3333;
+
+      --font-color_primary: #FFFFFF;
+      --font-color_secondary: rgba(255, 255, 255, 0.6);
+      --font-color_additional: rgba(255, 255, 255, 0.3);
+      --font-color_link: #FFF;
+    }
+  }
+
+  &_size {
+    &_default {
+      --font-size_s: 8px;
+      --font-size_m: 10px;
+      --font-size_l: 11px;
+      --font-size_xl: 13px;
+      --font-size_xxl: 16px;
+
+      --line-height_s: 21px;
+      --line-height_m: 25px;
+      --line-height_l: 28px;
+      --line-height_xl: 34px;
+      --line-height_xxl: 38px;
+    }
+  }
+
+  &_space {
+    &_default {
+      --space_xxxs: 3px;
+      --space_xxs: 6px;
+      --space_xs: 9px;
+      --space_s: 15px;
+      --space_m: 18px;
+      --space_l: 24px;
+      --space_xl: 27px;
+      --space_xxl: 36px;
+      --space_xxxl: 45px;
+      --space_xxxxl: 51px;
+      --space_xxxxxl: 72px;
+    }
+  }
+
+  &_gap {
+    &_small {
+      --gap: var(--space_s);
+
+      @media (min-width: 1024px) {
+        --gap: var(--space_xl);
+      }
+    }
+
+  }
+}
