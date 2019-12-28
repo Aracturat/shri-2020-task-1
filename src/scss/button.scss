@@ -1,0 +1,24 @@
+.button {
+  background: var(--color_accent);
+
+  $button-heights: (
+      s: 24px,
+      m: 32px,
+      l: 42px,
+      xl: 56px,
+      xxl: 64px
+  );
+
+  @each $size-name, $height in $button-heights {
+    &_size_#{$size-name} {
+      width: 200px;
+      height: #{$height};
+    }
+  }
+
+  &_width {
+    &_full {
+      width: auto;
+    }
+  }
+}
