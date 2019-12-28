@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
 
     &_distribute {
       &_center {
@@ -46,6 +47,7 @@
 
     position: absolute;
     bottom: 0;
+    width: 100%;
 
     &_distribute {
       &_between {
