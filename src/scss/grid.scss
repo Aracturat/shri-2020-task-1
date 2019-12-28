@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+
+  &_m-columns {
+    @each $columns in 10, 12 {
+      &_#{$columns} {
+        grid-template-columns: repeat($columns, 1fr);
+      }
+    }
+  }
+
+  &_col-gap {
+    &_two-thirds {
+      grid-column-gap: calc(var(--gap) * 2 / 3);
+    }
+
+    &_full {
+      grid-column-gap: var(--gap);
+    }
+
+    &_half {
+      grid-column-gap: calc(var(--gap) / 2);
+    }
+  }
+
+  &_row-gap {
+    &_full {
+      grid-row-gap: var(--gap);
+    }
+
+    &_half {
+      grid-row-gap: calc(var(--gap) / 2);
+    }
+  }
+
+  &__fraction {
+    &_m-col {
+      @each $col in 2, 3, 4, 5, 8 {
+        &_#{$col} {
+          grid-column: span $col;
+        }
+      }
+    }
+  }
+}
