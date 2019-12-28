@@ -1,0 +1,29 @@
+.icon-plus {
+  display: flex;
+
+  &_vertical-align {
+    &_center {
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    &_indent-r {
+      &_s {
+        margin-right: var(--space_s);
+      }
+      &_m {
+        margin-right: var(--space_m);
+      }
+    }
+    &_indent-l {
+      &_l {
+        margin-right: var(--space_l);
+      }
+    }
+  }
+
+  &__block {
+
+  }
+}
