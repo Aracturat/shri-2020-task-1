@@ -1,3 +1,22 @@
 .event {
   min-height: 400px;
+
+  &__preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space_xxl);
+  }
+
+  &__speaker {
+    margin-right: var(--space_xs);
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: var(--space_s);
+  }
+
+  &__description {
+    width: 100%;
+  }
 }
