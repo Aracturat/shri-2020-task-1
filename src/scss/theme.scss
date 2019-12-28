@@ -36,7 +36,7 @@
       --font-color_additional: rgba(255, 255, 255, 0.3);
       --font-color_link: #0077ff;
 
-      --image-placeholder-url: url('/static/images/image-placeholder-primary.svg');
+      --image-placeholder-url: url('/static/images/image-placeholder-inverse.svg');
     }
 
     &_project-warning {
@@ -48,8 +48,6 @@
       --font-color_secondary: rgba(255, 255, 255, 0.6);
       --font-color_additional: rgba(255, 255, 255, 0.3);
       --font-color_link: #FFF;
-
-      --image-placeholder-url: url('/static/images/image-placeholder-primary.svg');
     }
   }
 

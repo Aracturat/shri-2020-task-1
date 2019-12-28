@@ -1,6 +1,5 @@
 .card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 
   &_border {
     &_all {
@@ -16,16 +15,18 @@
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
     &_distribute {
       &_center {
-        justify-content: center;
+        align-content: center;
       }
     }
 
     &_vertical-align {
       &_center {
-        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -42,7 +43,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 0;
+
+    position: absolute;
+    bottom: 0;
 
     &_distribute {
       &_between {
