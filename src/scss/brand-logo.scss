@@ -1,0 +1,31 @@
+.brand-logo {
+  display: inline-block;
+
+  $brand-logo-background-colors: (
+      blue: #5dcdf9,
+      green: #23b324,
+      red: #ff3333,
+      purple: #c62cff
+  );
+
+  @each $name, $color in $brand-logo-background-colors {
+    &_name_#{name} {
+      background: #{$color};
+    }
+  }
+
+  $brand-logo-sizes: (
+      xxs: 24px,
+      xs: 32px,
+      s: 40px,
+      m: 60px,
+      l: 80px
+  );
+
+  @each $size-name, $size in $brand-logo-sizes {
+    &_size_#{$size-name} {
+      width: #{$size};
+      height: #{$size};
+    }
+  }
+}
