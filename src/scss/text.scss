@@ -1,7 +1,7 @@
 .text {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
 
   &_align {
     &_center {
@@ -81,10 +81,13 @@
   @each $text-size, $word-widths in $text-word-widths {
     @each $word-size, $width in $word-widths {
       &_size_#{$text-size} {
+        .text__word {
+          margin-top: 8px;
+          margin-bottom: calc(var(--line-height_#{$text-size}) - var(--font-size_#{$text-size}) - 8px);
+        }
+
         .text__word_width_#{$word-size} {
           width: $width;
-          margin-top: calc(var(--line-height_#{$word-size}) / 2);
-          margin-bottom: calc(var(--line-height_#{$word-size}) / 2);
         }
       }
     }

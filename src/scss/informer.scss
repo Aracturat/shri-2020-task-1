@@ -1,4 +1,7 @@
 .informer {
+  position: relative;
+  height: 100%;
+
   &_border {
     &_all {
       border: 3px solid var(--color_border);
@@ -37,5 +40,11 @@
         }
       }
     }
+  }
+
+  &__action {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
