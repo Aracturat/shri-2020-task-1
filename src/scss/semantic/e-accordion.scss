@@ -1,0 +1,11 @@
+.e-accordion {
+  &__short {
+    cursor: pointer;
+  }
+
+  &__more {
+    &_visible {
+      display: block;
+    }
+  }
+}
