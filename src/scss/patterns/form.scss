@@ -74,6 +74,9 @@
   }
 
   &__control {
-    flex: 1 1 auto;
+    flex: 1 1 65%;
+
+    display: flex;
+    justify-content: flex-end;
   }
 }
