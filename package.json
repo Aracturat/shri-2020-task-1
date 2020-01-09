@@ -18,10 +18,16 @@
     "url": "https://github.com/Aracturat/shri-2020-task-1/issues"
   },
   "homepage": "https://github.com/Aracturat/shri-2020-task-1#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-url": "^8.0.0",
     "sass-loader": "^8.0.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
