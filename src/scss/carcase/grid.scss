@@ -1,10 +1,13 @@
 .grid {
   display: grid;
+  background: var(--color_default);
 
   &_m-columns {
-    @each $columns in 10, 12 {
-      &_#{$columns} {
-        grid-template-columns: repeat($columns, 1fr);
+    @media (min-width: 1024px) {
+      @each $columns in 10, 12 {
+        &_#{$columns} {
+          grid-template-columns: repeat($columns, 1fr);
+        }
       }
     }
   }
@@ -34,10 +37,14 @@
   }
 
   &__fraction {
-    &_m-col {
-      @each $col in 2, 3, 4, 5, 8 {
-        &_#{$col} {
-          grid-column: span $col;
+    grid-column: span 1;
+
+    @media (min-width: 1024px) {
+      &_m-col {
+        @each $col in 2, 3, 4, 5, 8 {
+          &_#{$col} {
+            grid-column: span $col;
+          }
         }
       }
     }

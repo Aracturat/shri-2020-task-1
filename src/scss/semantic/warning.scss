@@ -1,7 +1,12 @@
 .warning {
   min-height: 335px;
 
-  .placeholder {
-    margin: var(--space_m) 0;
+  &__content {
+    flex-direction: column;
+    align-items: center;
+
+    .placeholder {
+      margin: var(--space_m) 0;
+    }
   }
 }

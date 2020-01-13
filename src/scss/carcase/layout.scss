@@ -1,5 +1,9 @@
 .layout {
+  background: var(--color_default);
+
   &__container {
+    background: var(--color_default);
+
     &_align {
       &_center {
         margin-left: auto;

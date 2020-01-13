@@ -1,7 +1,14 @@
 .product {
   min-height: 300px;
 
+  &__title {
+    margin-bottom: var(--space_xxxl);
+  }
+
   &__image {
+    // Хак, чтобы соответствовало картинке
+    --color_border: --color_default;
     height: 160px;
   }
+
 }
