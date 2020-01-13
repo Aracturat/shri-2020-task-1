@@ -5,7 +5,8 @@
   "main": "templater.js",
   "scripts": {
     "dev": "webpack -w --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "stub": "node ./stub/index.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
     "postcss-url": "^8.0.0",
     "sass-loader": "^8.0.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "bem-xjst": "^8.9.6",
+    "express": "^4.17.1"
   }
 }
