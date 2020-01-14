@@ -1,9 +1,11 @@
+@import "../theme/variables";
+
 .grid {
   display: grid;
   background: var(--color_default);
 
   &_m-columns {
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint) {
       @each $columns in 10, 12 {
         &_#{$columns} {
           grid-template-columns: repeat($columns, 1fr);
@@ -39,7 +41,7 @@
   &__fraction {
     grid-column: span 1;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $breakpoint) {
       &_m-col {
         @each $col in 2, 3, 4, 5, 8 {
           &_#{$col} {
