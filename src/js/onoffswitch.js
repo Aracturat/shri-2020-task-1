@@ -1,5 +1,8 @@
 import { addEventListener } from './utils';
 
+/**
+ * Обработчик клика на переключатель темы.
+ */
 addEventListener('.onoffswitch', (event, node) => {
 	node.classList.toggle('onoffswitch_checked');
 

@@ -1,5 +1,8 @@
 import { addEventListener} from './utils';
 
+/**
+ * Обработчик клика на раскрывающийся элемент.
+ */
 addEventListener('.e-accordion__short', (event, node) => {
 	const accordion = node.parentNode;
 
